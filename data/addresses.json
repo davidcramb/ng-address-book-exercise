@@ -1,0 +1,30 @@
+{
+  "addresses": {
+    "name1": {
+      "name": "Bob Barker",
+      "address": "123 Easy St",
+      "city": "Hollywood",
+      "state": "California",
+      "zip": "99999",
+      "phone": "(812)-555-5555"
+    },
+
+    "name2": {
+      "name": "Mary Jo",
+      "address": "3729 Cedarwood Dr",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "zip": "37216",
+      "phone": "(615)-513-2668"
+    },
+
+    "name3": {
+      "name": "Rowland Hill",
+      "address": "832 Braintree Ave",
+      "city": "Braintree",
+      "state": "Massachussetts",
+      "zip": "02510",
+      "phone": "(617)-833-7371"
+    }
+  }
+}
