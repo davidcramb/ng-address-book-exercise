@@ -1,12 +1,12 @@
 <h2>Address Book - List</h2>
-<div ng-repeat=>
+<div ng-repeat="name in contactList">
   <div class="panel panel-default">
     <div class="panel-body">
 
-      <div class="col-xs-5">{{book.name}}</div>
+      <div class="col-xs-5">{{name.name}}</div>
 
-      <div class="col-xs-3">{{book.location}}</div>      
-      <div class="col-xs-3">{{book.relation}}</div>
+      <div class="col-xs-3">{{name.location}}</div>      
+      <div class="col-xs-3">{{name.relation}}</div>
       <div class="col-xs-1"><button class="btn btn-danger">X</button></div>
     </div>
   </div>

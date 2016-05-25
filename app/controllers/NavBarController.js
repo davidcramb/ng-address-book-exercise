@@ -1,4 +1,4 @@
-main.controller("NavBarController", function($scope, $http){
+main.controller("NavBarController", function($scope){
   $scope.navItems = [
   
   {
