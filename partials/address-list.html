@@ -1,13 +1,15 @@
+<div class="container">
+  <div class="row">
 <h2>Address Book - List</h2>
-<div ng-repeat="name in contactList">
-  <div class="panel panel-default">
-    <div class="panel-body">
-
-      <div class="col-xs-5">{{name.name}}</div>
-
-      <div class="col-xs-3">{{name.location}}</div>      
-      <div class="col-xs-3">{{name.relation}}</div>
-      <div class="col-xs-1"><button class="btn btn-danger">X</button></div>
+  <div ng-repeat="name in contactList">
+    <div class="col s12 m4">
+      <div class="card small">
+        <div class="">{{name.name}}</div>
+        <div class="">{{name.city}}</div>      
+        <div class="">{{name.phone}}</div>
+        <div class="float right"><button class="btn btn-small btn-floating waves-effect red">X</button></div>
+    </div>
     </div>
   </div>
+</div>
 </div> 
