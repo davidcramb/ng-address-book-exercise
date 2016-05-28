@@ -4,7 +4,7 @@ main.factory("contactDB", function($q, $http, firebaseURL){
   var getAddressBook = function() {
     let contacts = [];
     return $q(function(resolve, reject) {
-      $http.get('https://dcc-addressbook.firebaseio.com/addresses.json')
+      $http.get(firebaseURL + 'addresses.json')
         .success(function(object) {
           console.log(object)
           var addressObject = object;

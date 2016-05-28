@@ -1,5 +1,5 @@
 var main = angular.module("AddressBook", ['ngRoute'])
-          .constant("firebaseURL", "https://dcc-addressbook.firebaseio.com/")
+          .constant("firebaseURL", "https://dcc-addressbook.firebaseio.com/");
 
 main.config(function($routeProvider) {
   $routeProvider.
