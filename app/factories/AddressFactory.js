@@ -43,9 +43,17 @@ main.factory("contactDB", function($q, $http, firebaseURL){
     );
     });
   };
+  var deleteContact = function(contactID){
+    return $q(function(resolve, reject){
+      $http
+          .delete(firebaseURL + `/book/${contactID}.json`)
+          .success(function(objectFromFirebase){
+            resolve(objectFromFirebase)
+          });
+    });
+  };
 
 
 
-
-return {getAddressBook:getAddressBook, createNewContact:createNewContact}
+return {getAddressBook:getAddressBook, createNewContact:createNewContact, deleteContact: deleteContact}
 }); //end
