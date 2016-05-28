@@ -1,5 +1,5 @@
 "use strict";
-main.factory("addressBook", function($q, $http){
+main.factory("contactDB", function($q, $http, firebaseURL){
 
   var getAddressBook = function() {
     let contacts = [];
@@ -21,9 +21,31 @@ main.factory("addressBook", function($q, $http){
     });
   };
 
+  var createNewContact = function(newContact){
+    return $q(function(resolve, reject) {
+      $http.post(
+        firebaseURL + "/addresses.json",
+          JSON.stringify({
+            first_name: newContact.first_name,
+            last_name: newContact.last_name,
+            address: newContact.address,
+            city: newContact.city,
+            state: newContact.state,
+            zip: newContact.zip,
+            phone: newContact.phone,
+            secret_police: newContact.secret_police
+          })
+        )
+    .success(
+      function(objectFromFirebase) {
+        resolve(objectFromFirebase);
+      }
+    );
+    });
+  };
 
 
 
 
-return {getAddressBook:getAddressBook}
+return {getAddressBook:getAddressBook, createNewContact:createNewContact}
 }); //end

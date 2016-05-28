@@ -1,2 +1,53 @@
-<h2 class="center-align">Add Contact</h2>
-<div class="
+<h2 class="left-align">{{pageTitle}}</h2>
+  <div class="row">
+    <form class="col s12"> <!-- Container for rest of columns, will inherit this column sizing -->
+      <div class="row">
+        <div class="input-field col s3">
+          <input placeholder="" id="first_name" type="text" class="validate" ng-model="makeContactObject.first_name">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="middle_name" type="text" class="validate" ng-model="makeContactObject.middle_name">
+          <label for="middle_name">Middle Name</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="last_name" type="text" class="validate" ng-model="makeContactObject.last_name">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="address_street" type="text" class="validate" ng-model="makeContactObject.address">
+          <label for="Address">Address</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="address_city" type="text" class="validate" ng-model="makeContactObject.city">
+          <label for="City">City</label>
+        </div>
+        <div class="input-field col s1">
+          <input id="address_state" type="text" class="validate" ng-model="makeContactObject.state">
+          <label for="State">State</label>
+        </div>
+        <div class="input-field col s1">
+          <input id="address_zip" type="text" class="validate" ng-model="makeContactObject.zip">
+          <label for="Zip Code">Zip</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" type="email" class="validate" ng-model="makeContactObject.email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="label" type="tel" class="validate" ng-model="makeContactObject.phone">
+          <label for="tel">Phone #</label>
+        </div>
+      </div>
+      <div>
+        <button class="btn-large" ng-click="addNewContact()">Add Contact</button>
+      </div>
+
+    </form>
+  </div>

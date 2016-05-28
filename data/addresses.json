@@ -1,29 +1,35 @@
 {
   "addresses": {
     "name1": {
-      "name": "Bob Barker",
+      "first_name": "Bob",
+      "last_name": "Barker",
       "address": "123 Easy St",
       "city": "Hollywood",
       "state": "California",
       "zip": "99999",
+      "email": "thepriceisright@cbs.com",
       "phone": "(812)-555-5555"
     },
 
     "name2": {
-      "name": "Mary Jo",
+      "first_name": "Mary",
+      "last_name": "Jo",
       "address": "3729 Cedarwood Dr",
       "city": "Nashville",
       "state": "Tennessee",
       "zip": "37216",
+      "email": "mailer-daemon@aol.com",
       "phone": "(615)-513-2668"
     },
 
     "name3": {
-      "name": "Rowland Hill",
+      "first_name": "Rowland",
+      "last_name": "Hill",
       "address": "832 Braintree Ave",
       "city": "Braintree",
       "state": "Massachussetts",
       "zip": "02510",
+      "email": "musicmajor@centre.edu",
       "phone": "(617)-833-7371"
     }
   }

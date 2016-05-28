@@ -1,8 +1,9 @@
-main.controller("AddressViewController", function($scope, addressBook){
+main.controller("AddressViewController", function($scope, contactDB){
 
 $scope.contactList = [];
-  addressBook.getAddressBook().then(function(contacts){
+  contactDB.getAddressBook().then(function(contacts){
     console.log("Address Book:", contacts)
+    console.log(contacts)
     $scope.contactList = contacts;
   })
 
