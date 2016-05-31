@@ -15,7 +15,13 @@ $scope.contactList = [];
     })[0]
   })
 
-    contactDB.deleteContact()
+    $scope.delete = function(contactId){
+      contactDB.deleteContact(contactId).then(function(response){
+        contactDB.getAddressBook().then(function(contacts){
+          $scope.contactList = contacts;
+        });
+      });
+    }
 
 
 });

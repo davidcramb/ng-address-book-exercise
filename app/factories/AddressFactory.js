@@ -43,10 +43,12 @@ main.factory("contactDB", function($q, $http, firebaseURL){
     );
     });
   };
-  var deleteContact = function(contactID){
+  var deleteContact = function(contactId){
+    console.log(contactId)
     return $q(function(resolve, reject){
+      console.log(firebaseURL)
       $http
-          .delete(firebaseURL + `/book/${contactID}.json`)
+          .delete(firebaseURL + `/addresses/${contactId}.json`)
           .success(function(objectFromFirebase){
             resolve(objectFromFirebase)
           });
