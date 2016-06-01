@@ -1,4 +1,5 @@
-app.factory("AuthFactory", function(firebaseURL) {
+"use strict";
+main.factory("AuthFactory", function(firebaseURL) {
   let ref = new Firebase(firebaseURL);
   let currentUserData = null;
 
